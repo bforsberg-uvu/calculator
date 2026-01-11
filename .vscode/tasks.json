@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Calculator",
+			"type": "shell",
+			"command": "/Users/macbookpro/School/INFO6200/module2/project/.venv/bin/python",
+			"args": [
+				"main.py"
+			]
+		}
+	]
+}
