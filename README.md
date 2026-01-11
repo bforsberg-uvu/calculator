@@ -1,46 +1,22 @@
-# Calculator
+## AI Collaboration Log
 
-A simple command-line calculator application written in Python.
+Prompt:  how do I check the type of a varible
 
-## Features
-- Basic arithmetic operations (addition, subtraction, multiplication, division)
-- Simple and intuitive command-line interface
+Response: Use the type() function to check the type of a variable:
 
-## Installation
+    To compare types:
 
-1. Clone the repository or download the project files
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+    if type(x) == int:
+        print("x is an integer")
 
-## Usage
+    if isinstance(x, int):  # Better practice
+        print("x is an integer")
 
-Run the calculator:
-```bash
-python main.py
-```
+    isinstance() is preferred because it also checks parent classes and is more Pythonic.
 
-## Requirements
+I was having an issue ensuring the input was the right type so I asked AI for info on how to do this in Python
 
-- Python 3.6 or higher
 
-## Project Structure
-
-```
-calculator/
-├── main.py           # Entry point for the application
-├── requirements.txt  # Project dependencies
-└── README.md        # This file
-```
-
-## Development
-
-To contribute or extend the calculator:
-
-1. Modify the source files in the project root
-2. Run tests to ensure everything works correctly
-3. Update `requirements.txt` if new dependencies are added
 
 ## License
 
