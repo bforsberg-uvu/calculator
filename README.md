@@ -1,6 +1,6 @@
 ## AI Collaboration Log
 
-Prompt:  how do I check the type of a varible
+Prompt:  how do I check the type of a variable
 
 Response: Use the type() function to check the type of a variable:
 
@@ -15,6 +15,11 @@ Response: Use the type() function to check the type of a variable:
     isinstance() is preferred because it also checks parent classes and is more Pythonic.
 
 I was having an issue ensuring the input was the right type so I asked AI for info on how to do this in Python
+
+
+
+Prompt: How do I check to see if a variable can be converted to a float in python?
+
 
 
 
