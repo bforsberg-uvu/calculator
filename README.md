@@ -18,10 +18,6 @@ I was having an issue ensuring the input was the right type so I asked AI for in
 
 
 
-Prompt: How do I check to see if a variable can be converted to a float in python?
-
-
-
 
 ## License
 
