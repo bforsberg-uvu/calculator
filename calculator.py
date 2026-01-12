@@ -24,11 +24,11 @@ def getInput(prompt, expected_type=str):
                 raise ValueError()
     except (ValueError, TypeError) as e:
         if expected_type in (float, int):
-            raise ValueError("Input must be a number.") from e
+            raise ValueError("Input must be a number. Please enter a valid number.") from e
         if expected_type == str:
-            raise ValueError("Invalid operation. Please enter one of +, -, *, /.") from e
+            raise ValueError("Invalid arithmetic operation. Please enter one of +, -, *, /.") from e
         else:
-            raise ValueError(f"Invalid input for type {expected_type.__name__}.") from e
+            raise ValueError(f"Invalid input for type {expected_type.__name__}. Please enter a valid input.") from e
 
 def doOperation(op, a, b):  
     """Perform the arithmetic operation."""
@@ -40,7 +40,7 @@ def doOperation(op, a, b):
         return a * b
     elif op == '/':
         if b == 0:
-            raise ValueError("Cannot divide by zero.")
+            raise ValueError("Cannot divide by zero. Please enter a non-zero divisor.")
         return a / b
 
 
@@ -50,9 +50,9 @@ def main():
 
     while True:
         try:
-            x_reg = getInput("Enter first number (or 'q' to quit): ", float)
-            oper = getInput("Enter operation (+, -, *, /): ", str)
-            y_reg = getInput("Enter second number: ", float)
+            x_reg = getInput("Please enter the first number (or 'q' to quit): ", float)
+            oper = getInput("Please enter the arithmetic operation (+, -, *, /): ", str)
+            y_reg = getInput("Please enter the second number: ", float)
             result = doOperation(oper, x_reg, y_reg)                                    
             print(f"Result: {result}\n")
         except ValueError as e:
