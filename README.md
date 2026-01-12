@@ -14,7 +14,7 @@ Response: Use the type() function to check the type of a variable:
 
     isinstance() is preferred because it also checks parent classes and is more Pythonic.
 
-I was having an issue ensuring the input was the right type so I asked AI for info on how to do this in Python
+Reflection:  I was having an issue ensuring the input was the right type so I asked AI for info on how to do this in Python
 
 -------------------------------
 
@@ -31,7 +31,7 @@ getInput("Enter a number: ", int) - expects an integer
 getInput("Enter a value: ", float) - expects a float
 getInput("Enter text: ") - expects a string (default)
 
-
+Reflection: I was having problem with the calculator throwing an error when the argument was of the correct type.  After AI correction the getInput method functioned correctly. 
 
 ## License
 

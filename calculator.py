@@ -8,7 +8,6 @@ x_reg = 0
 y_reg = 0
 oper = ''
 
-
 def getInput(prompt, expected_type=str):
     user_input = input(prompt).strip()
     if user_input.lower() == 'q':
@@ -42,9 +41,6 @@ def doOperation(op, a, b):
         if b == 0:
             raise ValueError("Cannot divide by zero. Please enter a non-zero divisor.")
         return a / b
-
-
-
 
 def main():
 
