@@ -3,16 +3,19 @@ Calculator Application
 A command-line calculator that performs basic arithmetic operations.
 """
 
-# Global variables
-x_reg = 0
-y_reg = 0
-oper = ''
+# Global variables - registers for operands and operation
+x_register = 0
+y_register = 0
+operation = ''
 
 def getInput(prompt, expected_type=str):
+    """Get user input and validate its type."""
     user_input = input(prompt).strip()
-    if user_input.lower() == 'q':
+    """ Allow user to quit the application"""
+    if user_input.lower() == 'q': 
         print("Goodbye!")
         exit()
+    """ Validate input type return input if valid"""
     try:
         if expected_type == float:
             return float(user_input)
@@ -45,11 +48,12 @@ def doOperation(op, a, b):
 def main():
 
     while True:
+        """main loop to get user input and perform calculations"""
         try:
-            x_reg = getInput("Please enter the first number (or 'q' to quit): ", float)
-            oper = getInput("Please enter the arithmetic operation (+, -, *, /): ", str)
-            y_reg = getInput("Please enter the second number: ", float)
-            result = doOperation(oper, x_reg, y_reg)                                    
+            x_register = getInput("Please enter the first number (or 'q' to quit): ", float)
+            operation = getInput("Please enter the arithmetic operation (+, -, *, /): ", str)
+            y_register = getInput("Please enter the second number: ", float)
+            result = doOperation(operation, x_register, y_register)                                    
             print(f"Result: {result}\n")
         except ValueError as e:
             print(f"Error: {e}\n")
