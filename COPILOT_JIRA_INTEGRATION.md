@@ -80,17 +80,19 @@ For older integrations or self-hosted Jira instances.
    - Add the repositories you want to sync
    - Wait for the initial sync to complete
 
-### Option 3: GitHub Copilot Workspace (Beta)
+### Option 3: Using Automation Tools
 
-GitHub Copilot Workspace can work with issues from GitHub, but for Jira integration:
+You can also use third-party automation tools to enhance integration:
 
-1. **Sync Jira Issues to GitHub Issues:**
-   - Use the GitHub for Jira app to sync issues bidirectionally
-   - Enable the "Sync issues" feature in app settings
+1. **Zapier or Make (formerly Integromat):**
+   - Create automated workflows between GitHub and Jira
+   - Trigger actions in Jira based on GitHub events
+   - Requires paid subscription for advanced features
 
-2. **Use GitHub Copilot with Synced Issues:**
-   - GitHub Copilot can then reference these synced issues
-   - Work on GitHub issues that are linked to Jira issues
+2. **Custom Webhooks:**
+   - Set up custom webhooks in GitHub
+   - Build custom integration logic
+   - Requires technical expertise and infrastructure
 
 ## Using the Integration
 
