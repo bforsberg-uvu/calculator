@@ -1,3 +1,11 @@
+# Calculator Project
+
+A Python-based command-line calculator application.
+
+## Documentation
+
+- [Copilot-Jira Integration Guide](COPILOT_JIRA_INTEGRATION.md) - Learn how to connect GitHub Copilot to Jira for enhanced project management
+
 ## AI Collaboration Log
 
 Prompt:  how do I check the type of a variable
